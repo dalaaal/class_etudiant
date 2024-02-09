@@ -1,13 +1,31 @@
 
 public class etudiant {
+    
+    private String nom;
+    private String prenom;
+    private int matricule;
 
-	public etudiant() {
-		// TODO Auto-generated constructor stub
-	}
+   
+    public etudiant(String nom, String prenom, int matricule) {
+        this.nom = nom;
+        this.prenom = prenom;
+        this.matricule = matricule;
+    }
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+    
+    public void insererNotes(float notes) {
+        
+        System.out.println("Notes insérées pour l'étudiant " + prenom + " " + nom);
+    }
+    
+    
+    public void supprimerNotes () {
+    	System.out.println("Notes supprimes pour l'etudiant" + prenom + " "+nom);
+    }
+    
+        
+       
 
-	}
-
+        
+       
 }
